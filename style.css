@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+}
+
+.logo svg {
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+}
+
+.logo h2 {
+    font-size: 19px;
+    margin-left: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content h2 {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.header-content p {
+    font-size: 15px;
+}
+
+.header-content svg {
+    cursor: pointer; 
+    margin-bottom: 20px;
+}
+
+.info{
+display: flex;
+flex-direction: column;
+}
+
+
+.options-card {
+    margin-right: 30px;
+    height: 160px;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+}
+
+.options-list li {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+
+
+.options-card.show {
+    display: block;
+}
+
+.options-card p {
+    margin-bottom: 10px;
+}
+
+.options-card ul {
+    border-top: 1px solid #D9D9D9;
+}
+
+.options-list li {
+    font-size: 15px;
+    padding-left: 10px; 
+}
+
+.options-list a{
+    color: black;
+}
+
+.options-list li.logout{
+display: flex;
+align-items: center;
+margin-bottom: 0;
+padding: 0 10px;
+}
+
+.logout svg {
+    width:18px;
+    height: 18px;
+    margin-left: 1px;
+    margin-top: 14px;
+    vertical-align: middle;
+}
+
+
+
+.container{
+align-items: center;
+justify-content: center;
+padding: 10px 100px;
+display: flex;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
+.info-usuario{
+    
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.mdc-text-field{
+   width: 240px;
+   height: 40px;
+}
+
+.edit-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.edit-container svg{
+    width: 22px;
+    margin-left: 20px;
+    display: flex;
+   align-items: center;
+}
+
+.edit-container a {
+    font-size: 15px;
+    color: black;
+   display: flex;
+   align-items: center;
+}
+
+.container-crud{
+    padding: 20px 200px;
+}
+.div-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-content h2{
+    font-size: 21px;
+}
+
+.div-content .mdc-button{
+    background-color: black;
+    color: rgb(242, 237, 237);
+    margin-right: 20px;
+}
+
+.id-nome{
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.id-nome h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.crud{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.name{
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.edit svg{
+    display: flex;
+    align-items: center;
+    width: 22px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+
+.btns-actions{
+    margin-left: 20px;
+}
+
+.btns-actions button {
+    margin-left: 20px;
+}
+
+.btns-actions .btn-menor{
+    width: 32px;
+}
+
+
+
+.icon-delete svg{
+    width:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+footer{
+    margin-top: 30px;
+    border-top: 1px solid #D9D9D9;
+    height: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin-right: 10px;
+    margin-top: 8px;
+    float: right;
+    font-size: 14px;
+    color: #a3a2a2;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Para empilhar os elementos verticalmente */
+        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+        height: auto; /* Redefinir a altura para se ajustar ao conteúdo */
+    }
+
+    .logo {
+        justify-content: center; /* Centralizar o logo verticalmente */
+        margin-bottom: 10px; /* Adicionar um espaço entre o logo e a header-content */
+    }
+
+    .div-logo{
+        justify-content: center; /* Centralizar o logo verticalmente */
+        padding: 10px 30px;
+    }
+
+
+    .div-logo img{
+        width: 100%;
+        height: 30px;
+    }
+
+    .div-logo .logo-seta{
+       display: flex;
+      
+        
+    }
+
+    .div-logo .h2-p{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 30px;
+        
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* mudança aqui*/
+    }
+
+    .header-content {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center; /* Centralizar horizontalmente */ 
+    }
+
+    .options-card {
+        margin-left: 35px;
+        height: 190px;
+        width: 330px;
+        top: 130px; /* Afastar o card da parte superior */
+        left: 0; /* Alinhar o card à esquerda */
+        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+    }
+
+
+   .options-list{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   
+   li.option-item{
+    padding: 20px 15px;
+   }
+
+   li.logout{
+    padding: 5px;
+   }
+
+    .options-list li {
+        cursor: pointer;       
+    }
+
+    .options-list li.logout{
+       text-align: center;
+       display: flex;
+       
+       justify-content: center;
+    }
+
+
+    
+.info-usuario{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.mdc-text-field{
+   width: 220px;
+   height: 40px;
+}
+
+
+.container{
+padding: 10px 30px;
+display: block;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
+.edit-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.edit-container svg{
+    width: 22px;
+    margin-left: 20px;
+    display: flex;
+   align-items: center;
+}
+
+.edit-container a {
+    font-size: 15px;
+    color: black;
+   display: flex;
+   align-items: center;
+}
+
+
+.container-crud{
+    padding: 10px 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.div-content{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-content h2{
+    margin-left: 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.div-content .mdc-button{
+    font-size: 10px;
+    width: 100px;
+    background-color: black;
+    color: rgb(242, 237, 237);
+
+    
+}
+
+.id-nome{
+    font-size: 13px;
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.id-nome h3{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+.crud{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.name{
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+
+.btns-actions{
+  display: block;
+
+}
+
+.btns-actions .btn-menor{
+    width: 12px;
+    height: 27px;
+    font-size: 10px;
+}
+
+.btns-actions button {
+   width: 42px;
+   font-size: 10px;
+}
+
+
+.icon-delete svg{
+    width:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid #D9D9D9;
+    height: 40px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 11px;
+    color: #a3a2a2;
+}   
+
+
+}
+
+/* COMEÇANDO AQUI O STYLE DA SEGUNDA TELA*/
+
+.div-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo img{
+  margin-right: 40px;
+ 
+}
+
+.div-logo .logo-seta{
+    width: 32px;
+    height: 32px;
+}
+
+.div-logo h2{
+    font-size: 19px;
+    padding: 0 20px;
+    margin-left: 5px;
+}
+
