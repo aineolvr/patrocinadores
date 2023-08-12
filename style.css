@@ -559,7 +559,7 @@ footer p {
     display: none;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 350px;
     height: auto;
     margin-left: 50px;
     padding-top: 20px;
@@ -639,7 +639,7 @@ footer p {
     }
 
     .div-logo .h2-p{
-      display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
