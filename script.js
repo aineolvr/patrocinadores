@@ -16,3 +16,14 @@ document.addEventListener('click', (event) => {
     }
 })
 
+
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const menuContent = document.getElementById('additional-buttons');
+
+mobileMenuButton.addEventListener('click', () => {
+    if (menuContent.style.display === 'block') {
+        menuContent.style.display = 'none';
+    } else {
+        menuContent.style.display = 'block';
+    }
+});
