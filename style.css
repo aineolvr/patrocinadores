@@ -605,19 +605,19 @@ footer p {
     z-index: 1000;
 }
 
+#additional-buttons {
+    display: none;
+}
+
 
 @media(max-width:768px){
 
-    
-   
     .pai-menu{
         display: none;
     }
 
     .pai-menu-mobile .mobile-menu{
         display: block;
-        
-
     }
 
     .mobile-menu button{
