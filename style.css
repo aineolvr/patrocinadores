@@ -569,9 +569,8 @@ footer p {
 
 
 
-
 .mobile-menu-button {
-    position: fixed;
+    position: absolute;
     display: none;
     position: fixed;
     top: 85px;
@@ -583,6 +582,41 @@ footer p {
 #additional-buttons {
     display: none;
 }
+
+.content-global{
+    display: flex;
+}
+
+.content-options{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    height: 100px;
+    width: 80%;
+    align-items: center;
+}
+
+.content-options h2{
+    font-size: 21px;
+}
+
+.content-um{
+    padding: 30px 0 0 20px;
+}
+
+.content-dois{
+    padding: 10px 15px 0  20px;
+}
+
+.content-dois p {
+    padding: 3px 0;
+    font-size: 19px;
+    margin-left: 80px;
+}
+
+
+
+
 
 
 @media(max-width:768px){
@@ -618,6 +652,7 @@ footer p {
 
     .pai-menu{
         display: none;
+       
     }
 
     .pai-menu-mobile .mobile-menu{
