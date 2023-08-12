@@ -571,6 +571,7 @@ footer p {
 
 
 .mobile-menu-button {
+    position: fixed;
     display: none;
     position: fixed;
     top: 85px;
@@ -632,7 +633,7 @@ footer p {
     
     .mobile-menu-button{
         display: block;
-       
+       position: fixed;
     }
 
 
