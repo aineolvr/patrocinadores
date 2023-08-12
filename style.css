@@ -611,7 +611,7 @@ footer p {
 .content-dois p {
     padding: 3px 0;
     font-size: 19px;
-    margin-left: 80px;
+ 
 }
 
 
@@ -671,5 +671,42 @@ footer p {
        position: fixed;
     }
 
+
+    
+.content-options{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.content-um{
+    padding: 20px;
+   
+}
+
+.content-um h2{
+    font-size: 14px;
+   
+}
+
+.content-dois{
+  padding: 20px;
+}
+
+.content-dois h2{
+    font-size: 14px;
+}
+
+.content-dois p {
+    padding: 3px 0;
+    font-size: 13px;
+    text-align: center;
+}
 
 }
