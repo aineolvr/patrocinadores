@@ -556,6 +556,7 @@ footer p {
 
 
 .pai-menu-mobile .menu-content {
+    position: fixed;
     display: none;
     align-items: center;
     justify-content: center;
@@ -565,14 +566,15 @@ footer p {
     padding-top: 20px;
     background-color: #D9D9D9;
     padding: 20px 10px;
+    z-index: 1000;
 }
 
 
 
 .mobile-menu-button {
-    position: absolute;
+    
     display: none;
-    position: fixed;
+   
     top: 85px;
     left: 52px;
     cursor: pointer;
@@ -912,5 +914,4 @@ thead th{
 
 
 }
-
 
