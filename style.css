@@ -731,6 +731,16 @@ thead th{
     border-bottom: 1px solid black !important;
 }
 
+tbody th{
+    border-bottom: 1px solid #D9D9D9 !important;
+    
+}
+
+tbody  td{
+    border-bottom: 1px solid #D9D9D9 !important;
+    
+}
+
 
 @media(max-width:768px){
 
