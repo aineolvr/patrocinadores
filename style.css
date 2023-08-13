@@ -584,15 +584,17 @@ footer p {
 }
 
 .content-global{
-    display: flex;
+   display: flex;
 }
+
+
 
 .content-options{
     justify-content: space-between;
     display: flex;
     border-bottom: 1px solid #D9D9D9;
     height: 100px;
-    width: 80%;
+    width: 100%;
     align-items: center;
 }
 
@@ -606,6 +608,8 @@ footer p {
 
 .content-dois{
     padding: 10px 15px 0  20px;
+    
+   
 }
 
 .content-dois p {
@@ -613,6 +617,69 @@ footer p {
     font-size: 19px;
  
 }
+
+.input-btns{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.container-content-main{
+    display: block;
+    width: 80%;
+}
+
+.input-btns input{
+    padding: 8px;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+}
+
+.input-btns button{
+    margin-right: 10px;
+}
+
+  
+.input-btns {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.input-svg {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-svg input[type=text] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.input-svg svg {
+    position: absolute;
+    right: 10px; 
+    width: 40px;
+    height: auto;
+    top: 5px;
+   
+}
+
+.input-svg .custom-button {
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -686,17 +753,18 @@ footer p {
 
 
 .content-um{
-    padding: 20px;
-   
+    padding: 10px 20px;
+    width: 100%;
 }
 
 .content-um h2{
     font-size: 14px;
-   
 }
 
 .content-dois{
-  padding: 20px;
+  padding: 0px;
+  margin-bottom: 21px;
+  
 }
 
 .content-dois h2{
@@ -704,9 +772,48 @@ footer p {
 }
 
 .content-dois p {
+    
     padding: 3px 0;
     font-size: 13px;
     text-align: center;
 }
+
+
+
+.input-btns{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+
+
+.input-btns input{
+    padding: 8px;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+}
+
+.input-btns button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+.input-btns .btn-edit{
+    margin-left: 20px;
+}
+  
+.input-btns {
+    display: block;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+
 
 }
