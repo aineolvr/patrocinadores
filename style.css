@@ -680,12 +680,6 @@ footer p {
 
 
 
-
-
-
-
-
-
 @media(max-width:768px){
 
     .div-logo{
@@ -753,7 +747,7 @@ footer p {
 
 
 .content-um{
-    padding: 10px 20px;
+    padding: 10px 60px;
     width: 100%;
 }
 
@@ -772,18 +766,19 @@ footer p {
 }
 
 .content-dois p {
-    
+    margin-top: 20px;
+    margin-right: 40px;
     padding: 3px 0;
     font-size: 13px;
     text-align: center;
 }
 
-
-
 .input-btns{
     display: block;
     margin-top: 10px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -814,6 +809,37 @@ footer p {
     align-items: center; /* Centraliza verticalmente os elementos */
 }
 
+.container-content-main{
+    display: block;
+    width: 100%;
+}
 
+
+.input-svg {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-svg input[type=text] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.input-svg svg {
+    position: absolute;
+    left: 280px; 
+    width: 40px;
+    height: auto;
+    top: 5px;
+   
+}
+
+.input-svg .custom-button {
+    border: none;
+    cursor: pointer;
+}
 
 }
