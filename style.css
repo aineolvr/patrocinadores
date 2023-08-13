@@ -707,6 +707,8 @@ footer p {
    
 }
 
+
+
 .mdc-data-table{
  margin-left: 70px;
  margin-top: 40px;
@@ -741,6 +743,11 @@ tbody  td{
     
 }
 
+
+.fixed-icon{
+    position: fixed;
+    z-index: 1000;
+}
 
 @media(max-width:768px){
 
