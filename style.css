@@ -892,8 +892,21 @@ thead th.name{
 .mdc-data-table{
     margin-left: 0px;
     margin-top: 20px;
+    max-width: 400px;
     
    }
 
+   .btn-crud-dois{
+    margin-left: 0px;
+   
+}
+
+.edit-dois{
+    margin-left: 0px;
+}
+
+
+
 
 }
+
