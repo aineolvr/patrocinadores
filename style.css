@@ -885,7 +885,10 @@ thead th.name{
 }
 
 
-
+.mdc-data-table{
+    margin-left: 10px;
+    margin-top: 20px;
+   }
 
 
 }
