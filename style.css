@@ -556,8 +556,6 @@ footer p {
 
 
 .pai-menu-mobile .menu-content {
-    position: fixed;
-    display: none;
     align-items: center;
     justify-content: center;
     width: 350px;
@@ -572,18 +570,16 @@ footer p {
 
 
 .mobile-menu-button {
-    
+    transform: translateY(-50%);
     display: none;
-   
+    position: absolute;
     top: 85px;
     left: 52px;
     cursor: pointer;
     z-index: 1000;
 }
 
-.mobile-menu-button svg{
-    position: fixed;
-}
+
 
 #additional-buttons {
     display: none;
@@ -798,7 +794,7 @@ tbody  td{
     
     .mobile-menu-button{
         display: block;
-       position: fixed;
+       position: absolute;
     }
 
 
