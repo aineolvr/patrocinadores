@@ -725,6 +725,9 @@ thead th.name{
     font-weight: bold;
 }
 
+thead th{
+    border-bottom: 1px solid black !important;
+}
 
 
 @media(max-width:768px){
@@ -892,7 +895,7 @@ thead th.name{
 .mdc-data-table{
     margin-left: 0px;
     margin-top: 20px;
-    max-width: 400px;
+    width: 400px;
     
    }
 
@@ -909,4 +912,5 @@ thead th.name{
 
 
 }
+
 
