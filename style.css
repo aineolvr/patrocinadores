@@ -524,7 +524,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     width: 320px;
-    height: 550px;
+    height: 850px;
     background-color: #D9D9D9;
 }
 
@@ -692,29 +692,36 @@ footer p {
    
 }
 
-.crud-dois{
-    width: 100%;
-}
-
-.row-dois{
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    border-bottom: 1px solid #D9D9D9;
-    width: 90%;
-}
-
-.id-dois{
-    padding: 0px 75px;
-}
-
 .edit-dois{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .btn-crud-dois{
-    margin-left: 80px;
+    margin-left: 40px;
+   
 }
+
+.mdc-data-table{
+ margin-left: 70px;
+ margin-top: 40px;
+}
+
+thead th.detail{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+thead th.id{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+thead th.name{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
 
 @media(max-width:768px){
 
@@ -876,5 +883,9 @@ footer p {
     border: none;
     cursor: pointer;
 }
+
+
+
+
 
 }
