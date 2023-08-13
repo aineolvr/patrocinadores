@@ -579,6 +579,10 @@ footer p {
     z-index: 1000;
 }
 
+.mobile-menu-button svg{
+    position: fixed;
+}
+
 #additional-buttons {
     display: none;
 }
@@ -888,6 +892,7 @@ thead th.name{
 .mdc-data-table{
     margin-left: 0px;
     margin-top: 20px;
+    
    }
 
 
