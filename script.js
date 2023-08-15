@@ -30,3 +30,20 @@ mobileMenuButton.addEventListener('click', () => {
         menuContent.style.display = 'block';
     }
 });
+
+ 
+ const openModalButton = document.getElementById('openModalButton');
+ const modal = document.querySelector('.mdc-dialog');
+
+ 
+ openModalButton.addEventListener('click', () => {
+   modal.classList.add('mdc-dialog--open');
+ });
+
+ 
+ const closeButton = document.querySelector('.mdc-dialog__close');
+
+
+ closeButton.addEventListener('click', () => {
+   modal.classList.remove('mdc-dialog--open');
+ });
