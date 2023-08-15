@@ -21,7 +21,7 @@ document.addEventListener('click', (event) => {
 
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const menuContent = document.getElementById('additional-buttons');
-
+const BtnCancelar = document.getElementById('btn-cancelar');
 
 mobileMenuButton.addEventListener('click', () => {
     if (menuContent.style.display === 'block') {
@@ -47,3 +47,7 @@ mobileMenuButton.addEventListener('click', () => {
  closeButton.addEventListener('click', () => {
    modal.classList.remove('mdc-dialog--open');
  });
+
+ BtnCancelar.addEventListener('click', () => {
+    modal.classList.remove('mdc-dialog--open')
+ })
