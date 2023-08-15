@@ -261,7 +261,7 @@
             </div>
         
               <div class="mdc-touch-target-wrapper">
-                <button class="mdc-button mdc-button--touch btn-edit" style="color: white; background-color: black; border: 1px solid black; "  >
+                <button id="openModalButton" class="mdc-button mdc-button--touch btn-edit" style="color: white; background-color: black; border: 1px solid black; "  >
                   <span class="mdc-button__ripple"></span>
                   <span class="mdc-button__touch"></span>
                   <span class="mdc-button__label">+ Novo patrocinador/promotor</span>
@@ -282,7 +282,7 @@
     
    
     
-   <div class="mdc-data-table" style="border: none !important;">
+  <div class="mdc-data-table one-table" style="border: none !important;">
   <div class="mdc-data-table__table-container" >
     <table class="mdc-data-table__table" aria-label="Dessert calories">
       
@@ -463,12 +463,300 @@
   </div>
 </div>
 
+<!--MODAL BUTTON NOVO PATROCINADOR-->
+
+<div class="mdc-dialog  mdc-dialog--fullscreen">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__header">
+        <h2 class="mdc-dialog__title" id="my-dialog-title" style="font-weight: bold;">
+          Novo patrocinador/promotor
+        </h2>
+        <button class="mdc-icon-button material-icons mdc-dialog__close"
+                data-mdc-dialog-action="close">
+          close
+        </button>
+      </div>
       
 
+      <div class="mdc-dialog__content linha1 div-input1" id="my-dialog-content">
+        
 
-</div><!--container-content-main-->
+        <div class="mdc-text-field mdc-text-field--outlined bloco1">
+          <input type="text" id="" class="mdc-text-field__input input-linha1">
+          <div class="mdc-notched-outline">
+              <div class="mdc-notched-outline__leading"></div>
+              <div class="mdc-notched-outline__notch">
+                  <label for="my-input" class="mdc-floating-label">Nome</label>
+              </div>
+              <div class="mdc-notched-outline__trailing"></div>
+          </div>
+      </div>
+
+
+      <div class="mdc-text-field mdc-text-field--outlined bloco1">
+        <input type="text" id="" class="mdc-text-field__input input-linha1">
+        <div class="mdc-notched-outline">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__notch">
+                <label for="my-input" class="mdc-floating-label">E-mail</label>
+            </div>
+            <div class="mdc-notched-outline__trailing"></div>
+        </div>
+    </div>
+
+    <div class="mdc-text-field mdc-text-field--outlined bloco1">
+      <input type="text" id="" class="mdc-text-field__input input-linha1">
+      <div class="mdc-notched-outline">
+          <div class="mdc-notched-outline__leading"></div>
+          <div class="mdc-notched-outline__notch">
+              <label for="my-input" class="mdc-floating-label">Nome da empresa</label>
+          </div>
+          <div class="mdc-notched-outline__trailing"></div>
+      </div>
+  </div>
+
+  <div class="mdc-text-field mdc-text-field--outlined bloco1 ">
+    <input type="text" id="" class="mdc-text-field__input input-linha1">
+    <div class="mdc-notched-outline">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+            <label for="my-input" class="mdc-floating-label">Numero do documento</label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+    </div>
+</div>
+
+      </div>
+
+
 
      
+
+
+      <!--SEGUNDA LINHA DOS INPUTS-->
+
+      <div class="mdc-dialog__content linha2" id="my-dialog-content">
+        <div class="left-div">
+       
+          <div class="mdc-select mdc-select--outlined bloco2">
+            <div class="mdc-select__anchor" aria-labelledby="outlined-select-label" style="height: 48px;">
+              <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                  <span id="outlined-select-label" class="mdc-floating-label">Data do Evento</span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+              </span>
+              <span class="mdc-select__selected-text-container">
+                <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+              </span>
+              <span class="mdc-select__dropdown-icon">
+                <svg
+                    class="mdc-select__dropdown-icon-graphic"
+                    viewBox="7 10 10 5" focusable="false">
+                  <polygon
+                      class="mdc-select__dropdown-icon-inactive"
+                      stroke="none"
+                      fill-rule="evenodd"
+                      points="7 10 12 15 17 10">
+                  </polygon>
+                  <polygon
+                      class="mdc-select__dropdown-icon-active"
+                      stroke="none"
+                      fill-rule="evenodd"
+                      points="7 15 12 10 17 15">
+                  </polygon>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+
+    
+          <!--select setor-->
+
+          <div class="mdc-select mdc-select--outlined bloco2">
+            <div class="mdc-select__anchor" aria-labelledby="outlined-select-label" style="height: 48px;">
+              <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                  <span id="outlined-select-label" class="mdc-floating-label">Setor</span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+              </span>
+              <span class="mdc-select__selected-text-container">
+                <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+              </span>
+              <span class="mdc-select__dropdown-icon">
+                <svg
+                    class="mdc-select__dropdown-icon-graphic"
+                    viewBox="7 10 10 5" focusable="false">
+                  <polygon
+                      class="mdc-select__dropdown-icon-inactive"
+                      stroke="none"
+                      fill-rule="evenodd"
+                      points="7 10 12 15 17 10">
+                  </polygon>
+                  <polygon
+                      class="mdc-select__dropdown-icon-active"
+                      stroke="none"
+                      fill-rule="evenodd"
+                      points="7 15 12 10 17 15">
+                  </polygon>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+
+
+    <div class="mdc-text-field mdc-text-field--outlined limite-input">
+      <input type="number" id="" class="mdc-text-field__input limite-input">
+      <div class="mdc-notched-outline">
+          <div class="mdc-notched-outline__leading"></div>
+          <div class="mdc-notched-outline__notch">
+              <label for="my-input" class="mdc-floating-label">Limite</label>
+          </div>
+          <div class="mdc-notched-outline__trailing"></div>
+      </div>
+
+  </div>
+
+  <div class="mdc-touch-target-wrapper btn-adc ">
+    <button class="mdc-button mdc-button--touch btn-adc-mod" style="color: white; background-color: black; border: 1px solid black; "  >
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__touch"></span>
+      <span class="mdc-button__label">+ Adicionar</span>
+    </button>
+</div>
+</div><!--left-div-->
+
+<div class="right-div">
+<div class="mdc-data-table table-margem-btn">
+<div class="mdc-data-table__table-container" >
+  <table class="mdc-data-table__table" aria-label="Dessert calories">
+    
+    <thead>
+      <tr class="mdc-data-table__header-row">
+      
+        <th class="mdc-data-table__header-cell id" role="columnheader" scope="col" style="font-weight: bold;">Data</th>
+        <th class="mdc-data-table__header-cell name" role="columnheader" scope="col" style="font-weight: bold;">Setor</th>
+        <th class="mdc-data-table__header-cell " role="columnheader" scope="col"></th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col" style="font-weight: bold;">Limite</th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+
+      </tr>
+    </thead>
+
+ 
+    <tbody class="mdc-data-table__content"  >
+      
+      <tr data-row-id="u0" class="mdc-data-table__row">
+       
+        <th class="mdc-data-table__cell" scope="row" id="u0">27/08/2022</th>
+        <td class="mdc-data-table__cell">Camarote Opne Superbull</td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell">500</td>
+        <td class="mdc-data-table__cell mdc-data-table__cell--numeric"></td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell"><div class="icon-delete">
+          <a><svg enable-background="new 0 0 91 91" height="27px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="27px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+      </div></td>
+      </tr>
+    </tbody>
+
+    <tbody class="mdc-data-table__content"  >
+      
+      <tr data-row-id="u0" class="mdc-data-table__row"  >
+       
+        <th class="mdc-data-table__cell" scope="row" id="u0">27/08/2022</th>
+        <td class="mdc-data-table__cell">Camarote Opne Superbull</td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell">500</td>
+        <td class="mdc-data-table__cell mdc-data-table__cell--numeric"></td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell"><div class="icon-delete">
+          <a><svg enable-background="new 0 0 91 91" height="27px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="27px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+      </div></td>
+      </tr>
+    </tbody>
+
+    <tbody class="mdc-data-table__content"  >
+      
+      <tr data-row-id="u0" class="mdc-data-table__row"  >
+       
+        <th class="mdc-data-table__cell" scope="row" id="u0">27/08/2022</th>
+        <td class="mdc-data-table__cell">Camarote Opne Superbull</td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell">500</td>
+        <td class="mdc-data-table__cell mdc-data-table__cell--numeric"></td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell"><div class="icon-delete">
+          <a><svg enable-background="new 0 0 91 91" height="27px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="27px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+      </div></td>
+      </tr>
+    </tbody>
+
+    <tbody class="mdc-data-table__content"  >
+      
+      <tr data-row-id="u0" class="mdc-data-table__row"  >
+       
+        <th class="mdc-data-table__cell" scope="row" id="u0">27/08/2022</th>
+        <td class="mdc-data-table__cell">Camarote Opne Superbull</td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell">500</td>
+        <td class="mdc-data-table__cell mdc-data-table__cell--numeric"></td>
+        <td class="mdc-data-table__cell"></td>
+        <td class="mdc-data-table__cell"><div class="icon-delete">
+          <a><svg enable-background="new 0 0 91 91" height="27px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="27px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+      </div></td>
+      </tr>
+    </tbody>
+  </table>
+ 
+</div>
+</div>
+
+<div class="mdc-touch-target-wrapper  ">
+<button class="mdc-button mdc-button--touch btn-cancelar" style="color: black; background-color: white; border: 1px solid black; "  >
+  <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__touch"></span>
+  <span class="mdc-button__label">Cancelar</span>
+</button>
+</div>
+
+<div class="mdc-touch-target-wrapper">
+<button class="mdc-button mdc-button--touch btn-adc-promot" style="color: white; background-color: black; border: 1px solid black;  "  >
+  <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__touch"></span>
+  <span class="mdc-button__label">Salvar patrocinador/promotor</span>
+</button>
+</div>
+
+
+</div><!--right-div-->
+      </div><!--linha2-->
+
+      <div class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-dialog__button"
+                data-mdc-dialog-action="ok">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+
+</div><!--container-content-main-->     
 </div><!--content-global-->
 
 <footer><p> © 2023- SPR Sistemas de controle</p></footer>
