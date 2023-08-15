@@ -821,13 +821,17 @@ tbody  td{
      
     }
 
+    .right-div{
+        margin-top: 20px;
+    }
+
     .left-div{
         margin-right: 70px;
     }
   
     .left-div,
     .right-div {
-     padding: 0;
+    
       width: 100%;
     }
     
