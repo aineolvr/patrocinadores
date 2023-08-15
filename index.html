@@ -762,7 +762,11 @@
 
 <footer><p> © 2023- SPR Sistemas de controle</p></footer>
 
- 
+  
+<script> const textFields = document.querySelectorAll('.mdc-text-field');
+  textFields.forEach((textField) => {
+      mdc.textField.MDCTextField.attachTo(textField);
+  });</script>
 
     <script src="./script.js"></script>
 </body>
