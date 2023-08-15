@@ -838,7 +838,8 @@ tbody  td{
     .bloco1,
     .bloco2,
     .limite-input {
-      width: 100%;
+      width: 80%;
+      
     }
   
     .btn-adc-mod{
