@@ -790,8 +790,6 @@ tbody  td{
  }
 
 
- 
-
  .left-div, .right-div{
   flex: 1;
   padding: 0px 5px;
@@ -843,6 +841,11 @@ tbody  td{
       width: 100%;
     }
   
+    .btn-adc-mod{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
     .btn-adc,
     .btn-cancelar,
     .btn-adc-promot {
